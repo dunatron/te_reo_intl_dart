@@ -14,6 +14,7 @@ void main() {
       ],
       supportedLocales: [
         Locale('en', 'US'),
+        Locale('zh'),
         Locale('mi'),
       ],
       home: Home(),
@@ -22,14 +23,37 @@ void main() {
   );
 }
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  DateTime selectedDate = DateTime.now();
+  final _locale = const Locale('mi');
+
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime? picked = await showDatePicker(
+      locale: _locale,
+      context: context,
+      initialDate: selectedDate,
+      firstDate: DateTime(2015, 8),
+      lastDate: DateTime(2101),
+    );
+    if (picked != null && picked != selectedDate) {
+      setState(() {
+        selectedDate = picked;
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Localizations.override(
       context: context,
-      locale: const Locale('mi'),
+      locale: _locale,
       child: Scaffold(
         appBar: AppBar(),
         drawer: Drawer(
@@ -41,12 +65,24 @@ class Home extends StatelessWidget {
             },
           ),
         ),
-        body: const Center(
+        body: Center(
           child: Padding(
-            padding: EdgeInsets.all(50.0),
-            child: Text(
-                'Long press hamburger icon in the app bar (aka the drawer menu)'
-                'to see a localized tooltip for the `mi` locale. '),
+            padding: const EdgeInsets.all(50.0),
+            child: Column(
+              children: [
+                const Text(
+                  'Long Press hamburger icon to see tooltip language',
+                ),
+                Text("${selectedDate.toLocal()}".split(' ')[0]),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                ElevatedButton(
+                  onPressed: () => _selectDate(context),
+                  child: const Text('Select date'),
+                ),
+              ],
+            ),
           ),
         ),
       ),

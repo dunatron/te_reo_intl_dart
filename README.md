@@ -1,16 +1,14 @@
 # te_reo_intl_dart
 
-A new Flutter project.
+te-reo translation for materialFlutter to use as a delegate
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Most of this has been translated using google translate and only half of the file has been done.
+it is basically needed when you go to add `mi` as A Locale. Since we want to use all the nice translations flutter has done already we will need to add this in
 
-A few resources to get you started if this is your first Flutter project:
+## Resources
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [example](https://github.com/flutter/website/blob/archived-master/examples/internationalization/add_language/lib/nn_intl.dart)
+- [internationalization flutter](https://docs.flutter.dev/development/accessibility-and-localization/internationalization)
+- [flutter supported languages](https://api.flutter.dev/flutter/flutter_localizations/GlobalMaterialLocalizations-class.html)

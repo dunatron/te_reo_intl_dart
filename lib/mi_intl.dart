@@ -105,46 +105,46 @@ const miDateSymbols = {
     'D',
   ],
   'MONTHS': <dynamic>[
-    'januar',
-    'februar',
-    'mars',
-    'april',
-    'mai',
-    'juni',
-    'juli',
-    'august',
-    'september',
-    'oktober',
-    'november',
-    'desember',
+    'Kohi-tātea',
+    'Hui-tanguru',
+    'Poutū-te-rangi',
+    'Paenga-whāwhā',
+    'Haratua',
+    'Pipiri',
+    'Hōngongoi',
+    'Here-turi-kōkā',
+    'Mahuru',
+    'Whiringa-ā-nuku',
+    'Whiringa-ā-rangi',
+    'Hakihea',
   ],
   'STANDALONEMONTHS': <dynamic>[
-    'januar',
-    'februar',
-    'mars',
-    'april',
-    'mai',
-    'juni',
-    'juli',
-    'august',
-    'september',
-    'oktober',
-    'november',
-    'desember',
+    'kohi-tātea',
+    'hui-tanguru',
+    'poutū-te-rangi',
+    'paenga-whāwhā',
+    'haratua',
+    'pipiri',
+    'hōngongoi',
+    'here-turi-kōkā',
+    'mahuru',
+    'whiringa-ā-nuku',
+    'whiringa-ā-rangi',
+    'hakihea',
   ],
   'SHORTMONTHS': <dynamic>[
-    'jan.',
-    'feb.',
-    'mar.',
-    'apr.',
-    'mai',
-    'jun.',
-    'jul.',
-    'aug.',
-    'sep.',
-    'okt.',
-    'nov.',
-    'des.',
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Okt',
+    'Nov',
+    'Dec',
   ],
   'STANDALONESHORTMONTHS': <dynamic>[
     'jan',
@@ -161,40 +161,40 @@ const miDateSymbols = {
     'des',
   ],
   'WEEKDAYS': <dynamic>[
-    'søndag',
-    'mandag',
-    'tirsdag',
-    'onsdag',
-    'torsdag',
-    'fredag',
-    'lørdag',
+    'Rātapu', // sunday
+    'Rāhina',
+    'Rātū',
+    'Rāapa',
+    'Rāpare',
+    'Rāmere',
+    'Rāhoroi', // saturday
   ],
   'STANDALONEWEEKDAYS': <dynamic>[
-    'søndag',
-    'mandag',
-    'tirsdag',
-    'onsdag',
-    'torsdag',
-    'fredag',
-    'lørdag',
+    'rātapu', // sunday
+    'rāhina',
+    'rātū',
+    'rāapa',
+    'rāpare',
+    'rāmere',
+    'rāhoroi', // saturd
   ],
   'SHORTWEEKDAYS': <dynamic>[
-    'søn.',
-    'man.',
-    'tir.',
-    'ons.',
-    'tor.',
-    'fre.',
-    'lør.',
+    'Sun',
+    'Mon',
+    'Tue',
+    'Wed',
+    'Thu',
+    'Fri',
+    'Sat',
   ],
   'STANDALONESHORTWEEKDAYS': <dynamic>[
-    'søn.',
-    'man.',
-    'tir.',
-    'ons.',
-    'tor.',
-    'fre.',
-    'lør.',
+    'Sun.',
+    'Mon.',
+    'Tue.',
+    'Wed.',
+    'Thu.',
+    'Fri.',
+    'Sat.',
   ],
   'NARROWWEEKDAYS': <dynamic>[
     'S',
@@ -221,10 +221,10 @@ const miDateSymbols = {
     'K4',
   ],
   'QUARTERS': <dynamic>[
-    '1. kvartal',
-    '2. kvartal',
-    '3. kvartal',
-    '4. kvartal',
+    '1. hauwhā',
+    '2. hauwhā',
+    '3. hauwhā',
+    '4. hauwhā',
   ],
   'AMPMS': <dynamic>[
     'a.m.',
@@ -263,7 +263,7 @@ class _MiMaterialLocalizationsDelegate
   const _MiMaterialLocalizationsDelegate();
 
   @override
-  bool isSupported(Locale locale) => locale.languageCode == 'Mi';
+  bool isSupported(Locale locale) => locale.languageCode == 'mi';
 
   @override
   Future<MaterialLocalizations> load(Locale locale) async {
@@ -339,81 +339,82 @@ class MiMaterialLocalizations extends GlobalMaterialLocalizations {
 
 // #docregion Getters
   @override
-  String get moreButtonTooltip => r'More';
+  String get moreButtonTooltip => r'Ētahi atu';
 
   @override
-  String get aboutListTileTitleRaw => r'About $applicationName';
+  String get aboutListTileTitleRaw => r'Mō $applicationName';
 
   @override
-  String get alertDialogLabel => r'Alert';
+  String get alertDialogLabel => r'Matohi';
 // #enddocregion Getters
 
   @override
   String get anteMeridiemAbbreviation => r'AM';
 
   @override
-  String get backButtonTooltip => r'Back';
+  String get backButtonTooltip => r'Whakamuri';
 
   @override
-  String get cancelButtonLabel => r'CANCEL';
+  String get cancelButtonLabel => r'Whakakore';
 
   @override
-  String get closeButtonLabel => r'CLOSE';
+  String get closeButtonLabel => r'KATIA';
 
   @override
-  String get closeButtonTooltip => r'Close';
+  String get closeButtonTooltip => r'Katia';
 
   @override
-  String get collapsedIconTapHint => r'Expand';
+  String get collapsedIconTapHint => r'Whakanuia';
 
   @override
-  String get continueButtonLabel => r'CONTINUE';
+  String get continueButtonLabel => r'TONU';
 
   @override
-  String get copyButtonLabel => r'COPY';
+  String get copyButtonLabel => r'KAUPAPA';
 
   @override
-  String get cutButtonLabel => r'CUT';
+  String get cutButtonLabel => r'KAUPAPA/CUT'; // copy and cut are same thing?
 
   @override
-  String get deleteButtonTooltip => r'Delete';
+  String get deleteButtonTooltip => r'Mukua';
 
   @override
-  String get dialogLabel => r'Dialog';
+  String get dialogLabel => r'Kōrerorero';
 
   @override
-  String get drawerLabel => r'Navigation menu';
+  String get drawerLabel => r'Tahua whakatere';
 
   @override
-  String get expandedIconTapHint => r'Collapse';
+  String get expandedIconTapHint => r'Tiango';
 
   @override
-  String get firstPageTooltip => r'First page';
+  String get firstPageTooltip => r'Whārangi tuatahi';
 
   @override
-  String get hideAccountsLabel => r'Hide accounts';
+  String get hideAccountsLabel => r'Huna pūkete';
 
   @override
-  String get lastPageTooltip => r'Last page';
+  String get lastPageTooltip => r'Whārangi whakamutunga';
 
   @override
-  String get licensesPageTitle => r'Licenses';
+  String get licensesPageTitle => r'Raihana';
 
   @override
-  String get modalBarrierDismissLabel => r'Dismiss';
+  String get modalBarrierDismissLabel => r'Whakakore';
 
   @override
-  String get nextMonthTooltip => r'Next month';
+  String get nextMonthTooltip => r'A tera marama';
 
   @override
-  String get nextPageTooltip => r'Next page';
+  String get nextPageTooltip => r'Whārangi o muri';
 
   @override
-  String get okButtonLabel => r'OK';
+  String get okButtonLabel => r'PAI';
 
   @override
   // A custom drawer tooltip message.
-  String get openAppDrawerTooltip => r'Custom Navigation Menu Tooltip';
+  // Open App Drawer
+  String get openAppDrawerTooltip => r'Whakatuwherahia te App Drawer';
 
 // #docregion Raw
   @override
@@ -425,22 +426,22 @@ class MiMaterialLocalizations extends GlobalMaterialLocalizations {
 // #enddocregion Raw
 
   @override
-  String get pasteButtonLabel => r'PASTE';
+  String get pasteButtonLabel => r'Whakapiri';
 
   @override
-  String get popupMenuLabel => r'Popup menu';
+  String get popupMenuLabel => r'Tahua pahūake';
 
   @override
   String get postMeridiemAbbreviation => r'PM';
 
   @override
-  String get previousMonthTooltip => r'Previous month';
+  String get previousMonthTooltip => r'Marama o mua';
 
   @override
-  String get previousPageTooltip => r'Previous page';
+  String get previousPageTooltip => r'Whārangi o mua';
 
   @override
-  String get refreshIndicatorSemanticLabel => r'Refresh';
+  String get refreshIndicatorSemanticLabel => r'Tāmata';
 
   @override
   String? get remainingTextFieldCharacterCountFew => null;
@@ -449,7 +450,7 @@ class MiMaterialLocalizations extends GlobalMaterialLocalizations {
   String? get remainingTextFieldCharacterCountMany => null;
 
   @override
-  String get remainingTextFieldCharacterCountOne => r'1 character remaining';
+  String get remainingTextFieldCharacterCountOne => r'1 pūāhua e toe ana';
 
   @override
   String get remainingTextFieldCharacterCountOther =>
@@ -459,37 +460,38 @@ class MiMaterialLocalizations extends GlobalMaterialLocalizations {
   String? get remainingTextFieldCharacterCountTwo => null;
 
   @override
-  String get remainingTextFieldCharacterCountZero => r'No characters remaining';
+  String get remainingTextFieldCharacterCountZero =>
+      r'Karekau he tohu e toe ana';
 
   @override
-  String get reorderItemDown => r'Move down';
+  String get reorderItemDown => r'Nuku ki raro';
 
   @override
-  String get reorderItemLeft => r'Move left';
+  String get reorderItemLeft => r'Nuku maui';
 
   @override
-  String get reorderItemRight => r'Move right';
+  String get reorderItemRight => r'Nuku matau';
 
   @override
-  String get reorderItemToEnd => r'Move to the end';
+  String get reorderItemToEnd => r'Nuku ki te mutunga';
 
   @override
-  String get reorderItemToStart => r'Move to the start';
+  String get reorderItemToStart => r'Nuku ki te timatanga';
 
   @override
-  String get reorderItemUp => r'Move up';
+  String get reorderItemUp => r'Neke ki runga';
 
   @override
-  String get rowsPerPageTitle => r'Rows per page:';
+  String get rowsPerPageTitle => r'Nga rarangi mo ia wharangi:';
 
   @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
-  String get searchFieldLabel => r'Search';
+  String get searchFieldLabel => r'Rapu';
 
   @override
-  String get selectAllButtonLabel => r'SELECT ALL';
+  String get selectAllButtonLabel => r'TOKO KATOA';
 
   @override
   String? get selectedRowCountTitleFew => null;
@@ -498,40 +500,40 @@ class MiMaterialLocalizations extends GlobalMaterialLocalizations {
   String? get selectedRowCountTitleMany => null;
 
   @override
-  String get selectedRowCountTitleOne => r'1 item selected';
+  String get selectedRowCountTitleOne => r'1 te mea kua tohua';
 
   @override
-  String get selectedRowCountTitleOther => r'$selectedRowCount items selected';
+  String get selectedRowCountTitleOther => r'$selectedRowCount tūemi kua tohua';
 
   @override
   String? get selectedRowCountTitleTwo => null;
 
   @override
-  String get selectedRowCountTitleZero => r'No items selected';
+  String get selectedRowCountTitleZero => r'Karekau he tuemi i tohua';
 
   @override
-  String get showAccountsLabel => r'Show accounts';
+  String get showAccountsLabel => r'Whakaatuhia nga kaute';
 
   @override
-  String get showMenuTooltip => r'Show menu';
+  String get showMenuTooltip => r'Whakaatu tahua';
 
   @override
-  String get signedInLabel => r'Signed in';
+  String get signedInLabel => r'Kua hainatia';
 
   @override
-  String get tabLabelRaw => r'Tab $tabIndex of $tabCount';
+  String get tabLabelRaw => r'Ripa $tabIndex o $tabCount';
 
   @override
   TimeOfDayFormat get timeOfDayFormatRaw => TimeOfDayFormat.h_colon_mm_space_a;
 
   @override
-  String get timePickerHourModeAnnouncement => r'Select hours';
+  String get timePickerHourModeAnnouncement => r'Tīpakohia ngā hāora';
 
   @override
-  String get timePickerMinuteModeAnnouncement => r'Select minutes';
+  String get timePickerMinuteModeAnnouncement => r'Tīpako meneti';
 
   @override
-  String get viewLicensesButtonLabel => r'VIEW LICENSES';
+  String get viewLicensesButtonLabel => r'Tirohanga Raihana';
 
   @override
   List<String> get narrowWeekdays =>
@@ -544,80 +546,80 @@ class MiMaterialLocalizations extends GlobalMaterialLocalizations {
       _MiMaterialLocalizationsDelegate();
 
   @override
-  String get calendarModeButtonLabel => r'Switch to calendar';
+  String get calendarModeButtonLabel => r'Huri ki te maramataka';
 
   @override
   String get dateHelpText => r'mm/dd/yyyy';
 
   @override
-  String get dateInputLabel => r'Enter Date';
+  String get dateInputLabel => r'Whakauruhia te Ra';
 
   @override
-  String get dateOutOfRangeLabel => r'Out of range.';
+  String get dateOutOfRangeLabel => r'Kei waho o te awhe.';
 
   @override
-  String get datePickerHelpText => r'SELECT DATE';
+  String get datePickerHelpText => r'KŌWHIRINGA TE RĀ';
 
   @override
-  String get dateRangeEndDateSemanticLabelRaw => r'End date $fullDate';
+  String get dateRangeEndDateSemanticLabelRaw => r'Te ra mutunga $fullDate';
 
   @override
-  String get dateRangeEndLabel => r'End Date';
+  String get dateRangeEndLabel => r'Te ra mutunga';
 
   @override
-  String get dateRangePickerHelpText => 'SELECT RANGE';
+  String get dateRangePickerHelpText => 'TE WHARE KORERO';
 
   @override
-  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+  String get dateRangeStartDateSemanticLabelRaw => 'Te ra timata \$fullDate';
 
   @override
-  String get dateRangeStartLabel => 'Start Date';
+  String get dateRangeStartLabel => 'Rā Tīmata';
 
   @override
   String get dateSeparator => '/';
 
   @override
-  String get dialModeButtonLabel => 'Switch to dial picker mode';
+  String get dialModeButtonLabel => 'Hurihia ki te aratau kaikowhiri waea';
 
   @override
-  String get inputDateModeButtonLabel => 'Switch to input';
+  String get inputDateModeButtonLabel => 'Huri ki te whakauru';
 
   @override
-  String get inputTimeModeButtonLabel => 'Switch to text input mode';
+  String get inputTimeModeButtonLabel => 'Hurihia ki te aratau whakauru kupu';
 
   @override
-  String get invalidDateFormatLabel => 'Invalid format.';
+  String get invalidDateFormatLabel => 'He muhu te whakatakotoranga.';
 
   @override
-  String get invalidDateRangeLabel => 'Invalid range.';
+  String get invalidDateRangeLabel => 'Awhe muhu.';
 
   @override
-  String get invalidTimeLabel => 'Enter a valid time';
+  String get invalidTimeLabel => 'Whakauruhia he wa whaimana';
 
   @override
-  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
+  String get licensesPackageDetailTextOther => '\$licenseCount raihana';
 
   @override
-  String get saveButtonLabel => 'SAVE';
+  String get saveButtonLabel => 'Tiaki';
 
   @override
-  String get selectYearSemanticsLabel => 'Select year';
+  String get selectYearSemanticsLabel => 'Tīpakohia te tau';
 
   @override
-  String get timePickerDialHelpText => 'SELECT TIME';
+  String get timePickerDialHelpText => 'WHAKATAKI WAA';
 
   @override
-  String get timePickerHourLabel => 'Hour';
+  String get timePickerHourLabel => 'Haora';
 
   @override
-  String get timePickerInputHelpText => 'ENTER TIME';
+  String get timePickerInputHelpText => 'TOMO TE WA';
 
   @override
-  String get timePickerMinuteLabel => 'Minute';
+  String get timePickerMinuteLabel => 'Te meneti';
 
   @override
-  String get unspecifiedDate => 'Date';
+  String get unspecifiedDate => 'Rā';
 
   @override
-  String get unspecifiedDateRange => 'Date Range';
+  String get unspecifiedDateRange => 'Awhe Ra';
 }
