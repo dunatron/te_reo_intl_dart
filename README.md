@@ -7,6 +7,8 @@ te-reo translation for materialFlutter to use as a delegate
 Most of this has been translated using google translate and only half of the file has been done.
 it is basically needed when you go to add `mi` as A Locale. Since we want to use all the nice translations flutter has done already we will need to add this in
 
+- FYI: the first initial commit has the original file untranslated. Give that to someone who is an expert
+
 ## Resources
 
 - [example](https://github.com/flutter/website/blob/archived-master/examples/internationalization/add_language/lib/nn_intl.dart)
